@@ -1,9 +1,10 @@
+# This software is a guessing game. There are two variations of it.
 import random
 
 print('Welcome to the guess game\nDo you want 5 tickets or more?')
 version = int(input('If 5 tickets are enough, enter the 1; if you want more enter the number 2: '))
 
-# Version 1
+# Version 1: There are only 5 tickets
 if version == 1:
     x = random.randrange(0, 100, 1)
     ticket = 0
@@ -28,7 +29,7 @@ if version == 1:
                 ticket += 1
                 point -= 20
 
-# Version 2
+# Version 2: Ask how many tickets are required.
 elif version == 2:
     x = random.randrange(0, 100, 1)
     total_ticket = int(input('How many tickets would you like? : '))
@@ -51,6 +52,7 @@ elif version == 2:
                 number = int(input('Enter a larger number: '))
                 ticket += 1
                 point -= (100 / total_ticket)
-                
+
+# The program ends if neither versions 1 nor 2 are chosen.               
 else:
     print("You entered the wrong number.")
