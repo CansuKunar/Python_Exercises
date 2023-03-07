@@ -30,13 +30,13 @@ def calculate_grade(line):
     return student_name + ":"+ letter_grade +  "\n"
 
 
-def ReadAverages():
+def read_averages():
     with open("Exam_Notes.txt","r", encoding= "utf-8") as file:
         for line in file:
             print(calculate_grade(line))
 
 
-def Enter_a_Note():
+def enter_a_note():
     name = input('Student Name: ')
     surname = input('Student surname: ')
     not1 = input('Not 1: ')
@@ -47,7 +47,7 @@ def Enter_a_Note():
         file.write(name+' '+surname+':'+not1+', '+not2+', '+not3+'\n')
 
 
-def SaveNotes():
+def save_notes():
     with open("Exam_Notes.txt", "r", encoding= "utf-8") as file:
         list = []
 
@@ -63,10 +63,10 @@ while True:
     process = input('1- Read Notes\n2- Make a Not\n3- Save Notes\n4- Exit\n')
 
     if process == '1':
-        ReadAverages()
+        read_averages()
     elif process == '2':
-        Enter_a_Note()
+        enter_a_note()
     elif process == '3':
-        SaveNotes()
+        save_notes()
     else:
         break
