@@ -17,3 +17,7 @@ This repository contains a compilation of my exercises when learning Python.
    - Password Control. Includes try-except blocks.
 7. [Exam Grades App](https://github.com/CansuKunar/Python_Exercises/blob/main/7_exam_grades_app.py)
    - When you add the exam grades, this program calculates and saves the exam letter grade. Includes file managements.
+8. [GitHub Api](https://github.com/CansuKunar/Python_Exercises/blob/main/8_github_api.py)
+   - With this API, you can find people, view their repository, and create a new repository. Includes the Request and JSON modules.
+9. [GitHub Bot](https://github.com/CansuKunar/Python_Exercises/tree/main/9_GitHub_Bot)
+   - This program is GitHub bot software. Utilizing the Selenium module, it is prepared.
